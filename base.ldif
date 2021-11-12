@@ -1,0 +1,35 @@
+dn: dc=caragua,dc=com
+dc: caragua
+objectClass: top
+objectClass: domain
+
+dn: cn=admin,dc=caragua,dc=com
+objectClass: organizationalRole
+cn: admin
+description: LDAP Manager
+
+dn: c=BR,dc=caragua,dc=com
+objectClass: country
+c: BR
+
+dn: o=estado,c=BR,dc=caragua,dc=com
+objectClass: organization
+o: saopaulo
+
+dn: ou=casa,o=estado,c=BR,dc=caragua,dc=com
+objectClass: organizationalUnit
+ou: CASA
+
+dn: uid=juan,ou=casa,o=estado,c=BR,dc=caragua,dc=com
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: juan
+uid: juan
+uidNumber: 2000
+gidNumber: 21
+homeDirectory: /home/juan
+loginShell: /bin/bash
+gecos: JUAN [LDAP]
+userPassword: {crypy}x 
