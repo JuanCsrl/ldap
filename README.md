@@ -17,7 +17,7 @@ sudo docker ps
 > Esse comando mostra quais conatiners estão rodando na sua maquina
 
 Pegue o ID ou no Name do container que você precisa acessar:
->imagem
+![image](https://user-images.githubusercontent.com/32464161/141482774-473b4e0c-21e8-4562-8958-0b5e167316df.png)
 
 Use o comando:
 ```
@@ -29,7 +29,8 @@ Dentro do container, execute o script `init.sh` e defina a senha do admin do lda
 ```
 ./init.sh
 ``` 
->image
+>![image](https://user-images.githubusercontent.com/32464161/141483034-5782af2d-1ca2-43c6-bf7b-1b080138004a.png)
+
 
 Agora podemos mexer os arquivos `ldif` usados para a configuração do servidor, são os unicos arquivos em que será feita alguma modificação. 
 > É preciso ter um conhecimento previo de como funciona o editor vi
@@ -39,9 +40,10 @@ Use o comando:
 vi db.ldif
 ```
 No arquivo `db.ldif` configuramos o user administrador do ldap:
->image
+>![image](https://user-images.githubusercontent.com/32464161/141483123-3271d71e-9833-4b1e-803f-0f5cef92face.png)
 No campo `olcRootPW` (linha 14) subistitua o valor `hash` pela a senha de admin, configurada anteriormente.
->image
+>![image](https://user-images.githubusercontent.com/32464161/141483224-5132869e-c1ff-403c-a538-e8c067631e19.png)
+
 para salvar user as altereções:
 aperte `esc`, depois apete `:`, aperte `w` e por fim `q`
 
@@ -70,4 +72,3 @@ Agora iremos testar nosso servidor:
 ldapsearch -x cn=juan -b dc=caragua,dc=com
 ```
 >Realizamos a busca pelo user juan, com base eu seu CN
->image
