@@ -74,3 +74,7 @@ Agora iremos testar nosso servidor:
 ldapsearch -x cn=juan -b dc=caragua,dc=com
 ```
 >Realizamos a busca pelo user juan, com base eu seu CN
+
+referencias:
+https://www.youtube.com/watch?v=uaxGJs48nSY
+https://www.youtube.com/watch?v=l8BwMlPRMF8
