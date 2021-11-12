@@ -29,7 +29,7 @@ Dentro do container, execute o script `init.sh` e defina a senha do admin do lda
 ```
 ./init.sh
 ``` 
->![image](https://user-images.githubusercontent.com/32464161/141483034-5782af2d-1ca2-43c6-bf7b-1b080138004a.png)
+![image](https://user-images.githubusercontent.com/32464161/141483034-5782af2d-1ca2-43c6-bf7b-1b080138004a.png)
 
 
 Agora podemos mexer os arquivos `ldif` usados para a configuração do servidor, são os unicos arquivos em que será feita alguma modificação. 
@@ -40,9 +40,9 @@ Use o comando:
 vi db.ldif
 ```
 No arquivo `db.ldif` configuramos o user administrador do ldap:
->![image](https://user-images.githubusercontent.com/32464161/141483123-3271d71e-9833-4b1e-803f-0f5cef92face.png)
+![image](https://user-images.githubusercontent.com/32464161/141483123-3271d71e-9833-4b1e-803f-0f5cef92face.png)
 No campo `olcRootPW` (linha 14) subistitua o valor `hash` pela a senha de admin, configurada anteriormente.
->![image](https://user-images.githubusercontent.com/32464161/141483224-5132869e-c1ff-403c-a538-e8c067631e19.png)
+![image](https://user-images.githubusercontent.com/32464161/141483224-5132869e-c1ff-403c-a538-e8c067631e19.png)
 
 para salvar user as altereções:
 aperte `esc`, depois apete `:`, aperte `w` e por fim `q`
