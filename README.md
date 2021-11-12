@@ -40,7 +40,7 @@ Use o comando:
 vi db.ldif
 ```
 No arquivo `db.ldif` configuramos o user administrador do ldap:
-![image](https://user-images.githubusercontent.com/32464161/141483123-3271d71e-9833-4b1e-803f-0f5cef92face.png)
+![image](https://user-images.githubusercontent.com/32464161/141483123-3271d71e-9833-4b1e-803f-0f5cef92face.png) 
 
 
 No campo `olcRootPW` (linha 14) subistitua o valor `hash` pela a senha de admin, configurada anteriormente.
